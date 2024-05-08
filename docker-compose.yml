@@ -1,0 +1,11 @@
+version: '3.10'
+
+services:
+  app1:
+    container_name: python-instance
+    build:
+      context: .
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./:/app
